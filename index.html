@@ -1,37 +1,44 @@
+<!DOCTYPE html>
 <HTML>
 <HEAD>
 <title>I am just a index, what do you expect from me?</title>
 <style>
-  .table {
-  margin: auto;
-  border: 0px;
-  padding: 5px;
+       table, tr, td {
+           margin: auto;
+           border: 10px solid white;
+           padding: 0px;
 }
+	.button1 {
+    text-align: center;
+}
+
 </style>
 </HEAD>
 <body>
 <script>
 var img = 0;
-function click(){
-img = img++;
-document.getElementById('clickcount').innerHTML = "Click count: " + img;
+function count(){
+    img++;
+    document.getElementById('clickcount').innerHTML = "Click count: " + img;
 }
 </script>
 
 <h1>Hello World!</h1>
-<div class="table">
+<div>
 <table>
 <tr>
-  <td>Just something</td>
-  <td>Something</td>
+    <td>Just something</td>
+    <td>Something</td>
 </tr>
 <tr>
-  <td><a href="https://www.lib.cuhk.edu.hk/">CUHK Lib</a></td>
-  <td><a hred="https://portal.cuhk.edu.hk/">MyCUHK</a></td>
+    <td><a href="https://www.lib.cuhk.edu.hk/">CUHK Library</a></td>
+    <td><a href="https://portal.cuhk.edu.hk/">MyCUHK</a></td>
 </tr>
 </table>
 </div>
-<button id="clickcount" onClick="click()">I am a click count, try clicking me!</button>
+<div class="button1">
+<button id="clickcount" onClick="count()">I am a click count, try clicking me!</button>
+</div>
 
 </body>
-</html>
+</HTML>

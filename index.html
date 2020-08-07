@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<title>I am just a index, what do you expect from me?</title>
+<style>
+  .table {
+  margin: auto;
+  border: 0px;
+  padding: 5px;
+}
+</style>
+</HEAD>
+<body>
+<script>
+var img = 0;
+function click(){
+img = img++;
+document.getElementById('clickcount').innerHTML = "Click count: " + img;
+}
+</script>
+
+<h1>Hello World!</h1>
+<div class="table">
+<table>
+<tr>
+  <td>Just something</td>
+  <td>Something</td>
+</tr>
+<tr>
+  <td><a href="https://www.lib.cuhk.edu.hk/">CUHK Lib</a></td>
+  <td><a hred="https://portal.cuhk.edu.hk/">MyCUHK</a></td>
+</tr>
+</table>
+</div>
+<button id="clickcount" onClick="click()">I am a click count, try clicking me!</button>
+
+</body>
+</html>
